@@ -1,4 +1,4 @@
-import random
+from random import randint
 from time import sleep
 
 print('=-='*20)
@@ -7,7 +7,7 @@ print('=-='*20)
 
 print('pensado...')
 sleep(1)
-num = random.randint(0, 5)
+num = randint(0, 5)
 
 chute = int(input('Qual número eu pensei? '))
 
