@@ -7,10 +7,10 @@ print('[3] converter para HEXADECIMAL')
 opção = int(input('Sua opção: '))
 
 if opção == 1:
-    print('O valor {} convertido em binario é {}'.format(num, bin(num)))
+    print('O valor {} convertido em binario é {}'.format(num, bin(num)[2:]))
 elif opção == 2:
-    print('O valor {} convertido para octal é {}'.format(num, oct(num)))
+    print('O valor {} convertido para octal é {}'.format(num, oct(num)[2:]))
 elif opção == 3:
-    print('O valor {} convertido para hexadecimal é {}'.format(num, hex(num)))
+    print('O valor {} convertido para hexadecimal é {}'.format(num, hex(num)[2:]))
 else:
-    print('\033[0;31;40mOpção não encontrada. tente novamente.\033[m')
+    print('\033[0;31;40mOpção inválida. tente novamente.\033[m')
