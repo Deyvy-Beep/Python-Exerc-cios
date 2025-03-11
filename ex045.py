@@ -19,33 +19,26 @@ sleep(0.5)
 print('PO!!!')
 sleep(0.5)
 
-if jogador == 0:
-    jogador = 'Pedra'
-elif jogador == 1:
-    jogador = 'Papel'
-elif jogador == 2:
-    jogador = 'Tesoura'
-else:
-    print('Opção não reconhecida. Você perdeu!')
-
+print('=-'*15)
 print(f'O computador Jogou: {pc}')
-print(f'O jogador jogou: {jogador}')
+print(f'O jogador jogou: {jogadas[jogador]}')
+print('=-'*15)
 
-if pc == 'Pedra' and jogador == 'Pedra':
+if pc == 'Pedra' and jogador == 0:
     print('Deu empate')
-if pc == 'Pedra' and jogador == 'Papel':
+if pc == 'Pedra' and jogador == 1:
     print('Jogador ganhou')
-if pc == 'Pedra' and jogador == 'Tesoura':
+if pc == 'Pedra' and jogador == 2:
     print('Computador Ganhou')
-if pc == 'Papel' and jogador == 'Pedra':
+if pc == 'Papel' and jogador == 0:
     print('Computador Ganhou')
-if pc == 'Papel' and jogador == 'Papel':
+if pc == 'Papel' and jogador == 1:
     print('Deu empate')
-if pc == 'Papel' and jogador == 'Tesoura':
+if pc == 'Papel' and jogador == 2:
     print('Jogador Ganhou')
-if pc == 'Tesoura' and jogador == 'Pedra':
+if pc == 'Tesoura' and jogador == 0:
     print('Jogador Ganhou')
-if pc == 'Tesoura' and jogador == 'Papel':
+if pc == 'Tesoura' and jogador == 1:
     print('Computador Ganhou')
-if pc == 'Tesoura' and jogador == 'Tesoura':
+if pc == 'Tesoura' and jogador == 2:
     print('Deu empate')
