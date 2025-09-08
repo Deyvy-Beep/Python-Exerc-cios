@@ -1,15 +1,21 @@
-times = ('Cruzeiro', 'Atlético-MG', 'Sport', 'Flamengo', 'Internacional',
-         'RedBull Bragantino', 'Vasco', 'Ceará', 'Corinthians', 'Bahia',
-         'Grêmio', 'São Paulo', 'Botafogo', 'Fluminense', 'Santos',
-         'Fortaleza', 'Juventude', 'Palmeiras', 'Mirassol', 'Vitória')
-print('-='*30)
-print(f'Lista de times do brasileirão: {times}')
-print('-='*30)
-print(f'Os 5 primeiros são {times[:5]}')
-print('-='*30)
-print(f'Os 4 últimos são {times[-4:]}')
-print('-='*30)
-print(f'Os times em ordem alfabética: {sorted(times)}')
-print('-='*30)
-print(f'O Sport esta na {times.index("Sport")+1}° posição')
-print('-='*30)
+times = ('Flamengo', 'Palmeiras', 'Cruzeiro', 'Bahia', 'Botafogo',
+         'Mirassol', 'São Paulo', 'Bragantino', 'Fluminense', 'Ceará',
+         'Corinthians', 'Atlético-MG', 'Internacional', 'Grêmio', 'Santos',
+         'Vasco', 'Vitória', 'Juventude', 'Fortaleza', 'Sport')
+
+print('=-='*20)
+print('Os 20 primeiros times do Campeonato Brasileiro de Futebol: \n')
+for c in range(0, 20):
+    if c % 5 == 0 and c != 0:
+        print('')
+    print(times[c], end=' - ')
+print('')
+print('=-='*20)
+print(f'Os 5 primeiros colocados:\n\n{times[:5]}')
+print('=-='*20)
+print(f'Os últimos 4 colocados:\n\n{times[-4:]}')
+print('=-='*20)
+print(f'Organizado em ordem alfabetica:\n\n{sorted(times)}')
+print('=-='*20)
+print(f'Corinthians esta na {times.index('Corinthians')+1}ª posição')
+print('=-='*20)

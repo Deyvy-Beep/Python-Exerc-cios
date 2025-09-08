@@ -6,13 +6,8 @@ print('=-='*20)
 print('Analisando seu nome...\n')
 sleep(1)
 
-print('Seu nome em maiúsculo é', nome.upper())
-print('Seu nome em minúsculo é', nome.lower())
-
-print('Seu nome tem {} letras'.format(len(nome.replace(" ", ""))))
-
-N_nome = nome.split()
-
-print('Seu primeiro nome é {} e ele tem {} letras'.format(N_nome[0], len(N_nome[0])))
-
-print('=-='*20)
+print(f'{nome}')
+print(f'Seu nome em maiúsculo é: {nome.upper()}')
+print(f'Seu nome em minusculo é: {nome.lower()}')
+print(f'Seu nome tem o total de {len(nome.replace(" ", ""))} letras')
+print(f'Seu primeiro nome é {nome.split()[0]} e tem o total de {len(nome.split()[0])} letras')

@@ -1,8 +1,20 @@
-from random import sample
+import random 
 
-num = (sample(range(0, 11), 5))
+maior = int
+menor = int
+nums = (random.randint(0, 10), random.randint(0, 10), random.randint(0, 10), random.randint(0, 10), random.randint(0, 10))
 
-print(f'Os números gerados foram: {num}')
+print('Os números gerados foram:', end=' ')
+for c in range(0, len(nums)):
+    print(nums[c], end=' ')
 
-print(f'O MAIOR número da tupla foi {max(num)}')
-print(f'O MENOR número da tupla foi {min(num)}')
+for c in range(0, len(nums)):
+    if c == 0:
+        maior = nums[c]
+        menor = nums[c]
+    elif nums[c] > maior:
+        maior = nums[c]
+    elif nums[c] < menor:
+        menor = nums[c]
+print(f'\nO maior número foi: {maior}')
+print(f'O menor número foi: {menor}')
