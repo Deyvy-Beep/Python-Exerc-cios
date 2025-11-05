@@ -1,9 +1,7 @@
-
-matriz = [[], [], []]
+matriz = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
 cont = cont_princ = 0
 while True:
-    valor = int(input(f'Digite um valor para [{cont_princ}, {cont}]: '))
-    matriz[cont_princ].append(valor)
+    matriz[cont_princ][cont] = int(input(f'Digite um valor para [{cont_princ}, {cont}]: '))
     if cont_princ == 2 and cont == 2:
         break
     elif cont == 2:
