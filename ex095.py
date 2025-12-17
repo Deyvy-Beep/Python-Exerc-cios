@@ -2,7 +2,7 @@ jogador = dict()
 dados = list()
 jogos = 0
 gols = list()
-
+cont = 0
 while True:
     jogador['Nome'] = str(input('Nome do jogador: '))
     jogos = int(input(f'Quantas partidas {jogador["Nome"]} jogou: '))
@@ -21,10 +21,13 @@ while True:
     if resp in 'Nn':
         break
 print('-='*30)
-print(f'{'COD':<1} {'NOME':<10} {'GOLS':<15} {'TOTAL':>10}')
+print(f'{'cod '} {'NOME':<15} {'GOLS':<15} {'TOTAL':<15}')
 print('_'*40)
-for c in range(0, len(dados)):
-    print(f'{enumerate(dados[c])} {dados[c]["Nome"]:<10} {dados[c]["Gols"]}{"":>15} {dados[c]["Total"]}')
+for c, v in enumerate(dados):
+    print(f'{c:>3} ', end='')
+    for d in v.values():
+        print(f'{str(d):<15} ', end='')
+    print()
 print('_'*40)
 while True:
     opcao = int(input('Mostrar dados de qual jogador?(999 para parar): '))
