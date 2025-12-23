@@ -8,13 +8,15 @@ def maior(* valores):
     for c in range(0, len(valores)):
         print(f'{valores[c]} ', end='', flush=True)
         sleep(0.5)
-    print('Foram informados 6 valores ao todo.')
+    print(f'Foram informados {len(valores)} valores ao todo.')
     sleep(1.5)
     print(f'O maior valor informado foi o {max(valores)}.')
     sleep(0.5)
     print('-=' * 20)
 
-maior(4, 5, 2, 6, 9)
-maior(2, 9, 3)
+
+maior(2, 9, 4, 5, 7, 1)
+maior(4, 7, 0)
+maior(1, 2)
+maior(6)
 maior(0)
-maior(2, 9, 3, 3, 7, 10)
