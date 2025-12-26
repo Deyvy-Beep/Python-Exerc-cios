@@ -1,7 +1,7 @@
-def sorteia(lista):
-    from random import randint
-    from time import sleep
+from random import randint
+from time import sleep
 
+def sorteia(lista):
     print('Sorteando 5 valores da lista: ', end='', flush=True)
     sleep(0.4)
     for c in range(0, 5):
@@ -12,12 +12,10 @@ def sorteia(lista):
 
 
 def somaPar(lista):
-    from time import sleep
-
     soma = 0
-    print(f'Somando os pares de {valores}, temos ', end='', flush=True)
+    print(f'Somando os pares de {lista}, temos ', end='', flush=True)
     sleep(1)
-    for valor in valores:
+    for valor in lista:
         if valor % 2 == 0:
             soma += valor
         else:

@@ -1,6 +1,7 @@
+from random import randint
+from time import sleep
+
 def maior(* valores):
-    from random import randint
-    from time import sleep
 
     print('-='*21)
     sleep(0.5)
